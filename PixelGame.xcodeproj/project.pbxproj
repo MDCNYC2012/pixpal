@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		299D8257154C5A4600B18D53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299D8256154C5A4600B18D53 /* UIKit.framework */; };
+		299D8259154C5A4600B18D53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299D8258154C5A4600B18D53 /* Foundation.framework */; };
+		299D825B154C5A4600B18D53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299D825A154C5A4600B18D53 /* CoreGraphics.framework */; };
+		299D8261154C5A4600B18D53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 299D825F154C5A4600B18D53 /* InfoPlist.strings */; };
+		299D8263154C5A4600B18D53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D8262154C5A4600B18D53 /* main.m */; };
+		299D8267154C5A4600B18D53 /* PGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D8266154C5A4600B18D53 /* PGAppDelegate.m */; };
+		299D826A154C5A4600B18D53 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299D8268154C5A4600B18D53 /* MainStoryboard.storyboard */; };
+		299D826D154C5A4600B18D53 /* PGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D826C154C5A4600B18D53 /* PGViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		299D8252154C5A4600B18D53 /* PixelGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		299D8256154C5A4600B18D53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		299D8258154C5A4600B18D53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		299D825A154C5A4600B18D53 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		299D825E154C5A4600B18D53 /* PixelGame-Info.plist */ = {isa = PBXFileReference; path = "PixelGame-Info.plist"; sourceTree = "<group>"; };
+		299D8260154C5A4600B18D53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		299D8262154C5A4600B18D53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		299D8264154C5A4600B18D53 /* PixelGame-Prefix.pch */ = {isa = PBXFileReference; path = "PixelGame-Prefix.pch"; sourceTree = "<group>"; };
+		299D8265154C5A4600B18D53 /* PGAppDelegate.h */ = {isa = PBXFileReference; path = PGAppDelegate.h; sourceTree = "<group>"; };
+		299D8266154C5A4600B18D53 /* PGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGAppDelegate.m; sourceTree = "<group>"; };
+		299D8269154C5A4600B18D53 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		299D826B154C5A4600B18D53 /* PGViewController.h */ = {isa = PBXFileReference; path = PGViewController.h; sourceTree = "<group>"; };
+		299D826C154C5A4600B18D53 /* PGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		299D824F154C5A4600B18D53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299D8257154C5A4600B18D53 /* UIKit.framework in Frameworks */,
+				299D8259154C5A4600B18D53 /* Foundation.framework in Frameworks */,
+				299D825B154C5A4600B18D53 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		299D8247154C5A4600B18D53 = {
+			isa = PBXGroup;
+			children = (
+				299D825C154C5A4600B18D53 /* PixelGame */,
+				299D8255154C5A4600B18D53 /* Frameworks */,
+				299D8253154C5A4600B18D53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		299D8253154C5A4600B18D53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				299D8252154C5A4600B18D53 /* PixelGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		299D8255154C5A4600B18D53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				299D8256154C5A4600B18D53 /* UIKit.framework */,
+				299D8258154C5A4600B18D53 /* Foundation.framework */,
+				299D825A154C5A4600B18D53 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		299D825C154C5A4600B18D53 /* PixelGame */ = {
+			isa = PBXGroup;
+			children = (
+				299D8265154C5A4600B18D53 /* PGAppDelegate.h */,
+				299D8266154C5A4600B18D53 /* PGAppDelegate.m */,
+				299D8268154C5A4600B18D53 /* MainStoryboard.storyboard */,
+				299D826B154C5A4600B18D53 /* PGViewController.h */,
+				299D826C154C5A4600B18D53 /* PGViewController.m */,
+				299D825D154C5A4600B18D53 /* Supporting Files */,
+			);
+			path = PixelGame;
+			sourceTree = "<group>";
+		};
+		299D825D154C5A4600B18D53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				299D825E154C5A4600B18D53 /* PixelGame-Info.plist */,
+				299D825F154C5A4600B18D53 /* InfoPlist.strings */,
+				299D8262154C5A4600B18D53 /* main.m */,
+				299D8264154C5A4600B18D53 /* PixelGame-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		299D8251154C5A4600B18D53 /* PixelGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 299D8270154C5A4600B18D53 /* Build configuration list for PBXNativeTarget "PixelGame" */;
+			buildPhases = (
+				299D824E154C5A4600B18D53 /* Sources */,
+				299D824F154C5A4600B18D53 /* Frameworks */,
+				299D8250154C5A4600B18D53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelGame;
+			productName = PixelGame;
+			productReference = 299D8252154C5A4600B18D53 /* PixelGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		299D8249154C5A4600B18D53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PG;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 299D824C154C5A4600B18D53 /* Build configuration list for PBXProject "PixelGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 299D8247154C5A4600B18D53;
+			productRefGroup = 299D8253154C5A4600B18D53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				299D8251154C5A4600B18D53 /* PixelGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		299D8250154C5A4600B18D53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299D8261154C5A4600B18D53 /* InfoPlist.strings in Resources */,
+				299D826A154C5A4600B18D53 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		299D824E154C5A4600B18D53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299D8263154C5A4600B18D53 /* main.m in Sources */,
+				299D8267154C5A4600B18D53 /* PGAppDelegate.m in Sources */,
+				299D826D154C5A4600B18D53 /* PGViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		299D825F154C5A4600B18D53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				299D8260154C5A4600B18D53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		299D8268154C5A4600B18D53 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				299D8269154C5A4600B18D53 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		299D826E154C5A4600B18D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		299D826F154C5A4600B18D53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		299D8271154C5A4600B18D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PixelGame/PixelGame-Prefix.pch";
+				INFOPLIST_FILE = "PixelGame/PixelGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		299D8272154C5A4600B18D53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PixelGame/PixelGame-Prefix.pch";
+				INFOPLIST_FILE = "PixelGame/PixelGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		299D824C154C5A4600B18D53 /* Build configuration list for PBXProject "PixelGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				299D826E154C5A4600B18D53 /* Debug */,
+				299D826F154C5A4600B18D53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		299D8270154C5A4600B18D53 /* Build configuration list for PBXNativeTarget "PixelGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				299D8271154C5A4600B18D53 /* Debug */,
+				299D8272154C5A4600B18D53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 299D8249154C5A4600B18D53 /* Project object */;
+}
