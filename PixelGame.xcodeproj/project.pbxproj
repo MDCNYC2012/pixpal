@@ -25,6 +25,7 @@
 		2927AB55154C84AE00686E19 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2927AB54154C84AE00686E19 /* CoreImage.framework */; };
 		29797D52154DC6EE001EB4D5 /* progress_fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 29797D50154DC6EE001EB4D5 /* progress_fill.png */; };
 		29797D56154DC8C1001EB4D5 /* splash_screen-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 29797D54154DC8C1001EB4D5 /* splash_screen-Landscape.png */; };
+		29797D58154DC8E5001EB4D5 /* views.py in Resources */ = {isa = PBXBuildFile; fileRef = 29797D57154DC8E5001EB4D5 /* views.py */; };
 		297CA794154CE1AF00E2A73D /* PGGameCoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297CA793154CE1AF00E2A73D /* PGGameCoreController.m */; };
 		299D8257154C5A4600B18D53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299D8256154C5A4600B18D53 /* UIKit.framework */; };
 		299D8259154C5A4600B18D53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299D8258154C5A4600B18D53 /* Foundation.framework */; };
@@ -73,6 +74,7 @@
 		2927AB54154C84AE00686E19 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		29797D50154DC6EE001EB4D5 /* progress_fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_fill.png; sourceTree = "<group>"; };
 		29797D55154DC8C1001EB4D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/splash_screen-Landscape.png"; sourceTree = "<group>"; };
+		29797D57154DC8E5001EB4D5 /* views.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = views.py; sourceTree = "<group>"; };
 		297CA792154CE1AF00E2A73D /* PGGameCoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGGameCoreController.h; sourceTree = "<group>"; };
 		297CA793154CE1AF00E2A73D /* PGGameCoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGGameCoreController.m; sourceTree = "<group>"; };
 		299D8252154C5A4600B18D53 /* PixelGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 		299D8247154C5A4600B18D53 = {
 			isa = PBXGroup;
 			children = (
+				29797D57154DC8E5001EB4D5 /* views.py */,
 				1D13C1D3154D03D100C32206 /* QuartzCore.framework */,
 				29C318A7154C8D14001401A5 /* UIImage_Hue.h */,
 				2927AB54154C84AE00686E19 /* CoreImage.framework */,
@@ -332,6 +335,7 @@
 				29A57535154DBA4D00EBBC83 /* triangle.png in Resources */,
 				29797D52154DC6EE001EB4D5 /* progress_fill.png in Resources */,
 				29797D56154DC8C1001EB4D5 /* splash_screen-Landscape.png in Resources */,
+				29797D58154DC8E5001EB4D5 /* views.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
