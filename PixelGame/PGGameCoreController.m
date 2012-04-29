@@ -79,8 +79,8 @@ static NSString * const kGCExperience = @"kGCExperience";
     if([cloudLevel intValue] == 0) {
         name = @"Player";
         level = 1;
-        energy = 20;
-        maxEnergy = 20;
+        energy = 1000;
+        maxEnergy = 1000;
         experience = 0;
     
         [self saveStatsToCloud];
