@@ -33,6 +33,8 @@
 
     IBOutlet UIImageView *energyBarBackground;
     IBOutlet UILabel *energyLabel;
+    
+    IBOutlet UIImageView *splashScreen;
 }
 
 

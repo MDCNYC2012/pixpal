@@ -148,6 +148,8 @@
     [fieldView setField:field];
     [fieldScrollView setContentSize:fieldView.contentSize];
     
+    splashScreen.hidden = YES;
+    
     [self setNeedsDisplayFieldView];    
     [self refreshFieldPixels]; 
     
