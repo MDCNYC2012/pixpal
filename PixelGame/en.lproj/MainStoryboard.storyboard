@@ -85,6 +85,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="splash.png" id="HIZ-tu-0hJ">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -98,6 +102,7 @@
                         <outlet property="fieldView" destination="jqY-CX-DJE" id="aPb-CS-BZh"/>
                         <outlet property="leftBarZoomed" destination="o7P-7v-tmg" id="7qF-vc-FKR"/>
                         <outlet property="rightBarZoomed" destination="Kpx-hv-hgX" id="ekI-mo-Dhj"/>
+                        <outlet property="splashScreen" destination="HIZ-tu-0hJ" id="g9U-pW-fwt"/>
                         <outlet property="topBarZoomed" destination="yyI-qa-DUv" id="2Lj-q3-qCa"/>
                     </connections>
                 </viewController>
@@ -117,6 +122,7 @@
         <image name="interface_mid_right.png" width="14" height="632"/>
         <image name="interface_top.png" width="1024" height="47"/>
         <image name="progress_fill.png" width="3" height="12"/>
+        <image name="splash.png" width="1024" height="748"/>
     </resources>
     <classes>
         <class className="PGFieldView" superclassName="UIView">
@@ -133,6 +139,7 @@
                 <relationship kind="outlet" name="fieldView" candidateClass="PGFieldView"/>
                 <relationship kind="outlet" name="leftBarZoomed" candidateClass="UIView"/>
                 <relationship kind="outlet" name="rightBarZoomed" candidateClass="UIView"/>
+                <relationship kind="outlet" name="splashScreen" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="topBarZoomed" candidateClass="UIView"/>
             </relationships>
         </class>
