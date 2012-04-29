@@ -23,6 +23,7 @@
 		1D13C201154D1D0300C32206 /* interface_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D13C1F4154D1D0300C32206 /* interface_top.png */; };
 		2927AB53154C802500686E19 /* PGFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2927AB52154C802500686E19 /* PGFieldView.m */; };
 		2927AB55154C84AE00686E19 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2927AB54154C84AE00686E19 /* CoreImage.framework */; };
+		29797D49154DC5BF001EB4D5 /* progress_fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 29797D48154DC5BF001EB4D5 /* progress_fill.png */; };
 		297CA794154CE1AF00E2A73D /* PGGameCoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297CA793154CE1AF00E2A73D /* PGGameCoreController.m */; };
 		299D8257154C5A4600B18D53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299D8256154C5A4600B18D53 /* UIKit.framework */; };
 		299D8259154C5A4600B18D53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299D8258154C5A4600B18D53 /* Foundation.framework */; };
@@ -69,6 +70,7 @@
 		2927AB51154C802500686E19 /* PGFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGFieldView.h; sourceTree = "<group>"; };
 		2927AB52154C802500686E19 /* PGFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGFieldView.m; sourceTree = "<group>"; };
 		2927AB54154C84AE00686E19 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		29797D48154DC5BF001EB4D5 /* progress_fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = progress_fill.png; path = ../../PixelGame/PixelGame/progress_fill.png; sourceTree = "<group>"; };
 		297CA792154CE1AF00E2A73D /* PGGameCoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGGameCoreController.h; sourceTree = "<group>"; };
 		297CA793154CE1AF00E2A73D /* PGGameCoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGGameCoreController.m; sourceTree = "<group>"; };
 		299D8252154C5A4600B18D53 /* PixelGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +206,7 @@
 		29C68D95154CA4ED00903897 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				29797D48154DC5BF001EB4D5 /* progress_fill.png */,
 				1D13C1E6154D1CE500C32206 /* ui_controls */,
 				29C68DB7154CACE700903897 /* pixels_zoomed */,
 				29C68DB6154CACDE00903897 /* pixels_normal */,
@@ -324,6 +327,7 @@
 				29A57533154DBA4D00EBBC83 /* romb.png in Resources */,
 				29A57534154DBA4D00EBBC83 /* square.png in Resources */,
 				29A57535154DBA4D00EBBC83 /* triangle.png in Resources */,
+				29797D49154DC5BF001EB4D5 /* progress_fill.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

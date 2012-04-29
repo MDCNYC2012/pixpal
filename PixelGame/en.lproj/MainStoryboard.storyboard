@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" id="7TB-9A-ZoZ" userLabel="fieldZoomView">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" id="7TB-9A-ZoZ" userLabel="fieldZoomView">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -39,6 +39,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="47"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
+                                    <imageView contentMode="scaleToFill" image="progress_fill.png" id="AhA-qm-dib">
+                                        <rect key="frame" x="137" y="7" width="300" height="12"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ENEGRY: 200/1000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="t9B-fM-sqo">
+                                        <rect key="frame" x="182" y="1" width="208" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" id="irK-E3-vzv" userLabel="bottomBarZoomed">
@@ -81,6 +92,8 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="bottomBarZoomed" destination="irK-E3-vzv" id="jeK-AE-6zP"/>
+                        <outlet property="energyBarBackground" destination="AhA-qm-dib" id="WlC-PZ-7Jf"/>
+                        <outlet property="energyLabel" destination="t9B-fM-sqo" id="3VB-Vd-glK"/>
                         <outlet property="fieldScrollView" destination="7TB-9A-ZoZ" id="Pra-nl-Zxq"/>
                         <outlet property="fieldView" destination="jqY-CX-DJE" id="aPb-CS-BZh"/>
                         <outlet property="leftBarZoomed" destination="o7P-7v-tmg" id="7qF-vc-FKR"/>
@@ -103,6 +116,7 @@
         <image name="interface_mid_left.png" width="14" height="632"/>
         <image name="interface_mid_right.png" width="14" height="632"/>
         <image name="interface_top.png" width="1024" height="47"/>
+        <image name="progress_fill.png" width="3" height="12"/>
     </resources>
     <classes>
         <class className="PGFieldView" superclassName="UIView">
@@ -113,6 +127,8 @@
             <relationships>
                 <relationship kind="action" name="pinchGestureSelector:" candidateClass="UIPinchGestureRecognizer"/>
                 <relationship kind="outlet" name="bottomBarZoomed" candidateClass="UIView"/>
+                <relationship kind="outlet" name="energyBarBackground" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="energyLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="fieldScrollView" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="fieldView" candidateClass="PGFieldView"/>
                 <relationship kind="outlet" name="leftBarZoomed" candidateClass="UIView"/>

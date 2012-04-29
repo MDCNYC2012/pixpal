@@ -9,7 +9,6 @@
 #import "PGFieldViewController.h"
 #import "PGFieldView.h"
 #import <QuartzCore/QuartzCore.h>
-#import "PGGameCoreController.h"
 
 @interface PGFieldViewController ()
 - (void)setNeedsDisplayFieldView;
@@ -26,6 +25,7 @@
     
     networkCommands = [NSMutableArray array];
 	gameCoreController = [[PGGameCoreController alloc] init];
+    [gameCoreController setDelegate:self];
     
     fieldView.delegate = self;
     [self updateZoomState:NO];
@@ -96,6 +96,13 @@
     b.selected =YES;
     
     fieldView.selectedType = selectedTypeButtonIndex;
+}
+
+
+- (void)updateEnergyBar:(int)energy maxEnergy:(int)maxEnergy {
+    energyLabel.text = [NSString stringWithFormat:@"ENERGY: %d of %d", energy, maxEnergy];
+    energyBarBackground.frame = (CGRect){energyBarBackground.frame.origin, 
+        200.0 * energy / maxEnergy, energyBarBackground.frame.size.height};
 }
 
 
@@ -185,11 +192,17 @@
     }
 }
 
+- (void)updateStats 
+{
+    [self updateEnergyBar:gameCoreController.energy maxEnergy:gameCoreController.maxEnergy];    
+}
+
 #pragma mark PGFieldViewDelegate
 
 - (void)pixel:(struct Pixel)pixel updatedForX:(int)x Y:(int)y
 {
     [gameCoreController setEnergy:gameCoreController.energy - 1];
+    [self updateStats];
     
     unsigned char rawPixel = (((pixel.type)<<5)&0xE0)|pixel.color;
     NSString *urlString = [NSString stringWithFormat:@"http://bmikle.com/pixel_game/set_pixel?x=%i&y=%i&pixel=%i&format=1",x,y, rawPixel];

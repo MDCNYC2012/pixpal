@@ -99,6 +99,8 @@ const static int kFieldSize = 101;
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    if (!zoomed) return;
+
     UITouch *touch = (UITouch *)[touches anyObject];
     CGPoint touchPoint = [touch locationInView:self];
     
@@ -130,7 +132,12 @@ const static int kFieldSize = 101;
     //	CGFloat y = box.origin.y * contentsScale / tileSize.height;
 	
 	// Clear background
-	CGContextSetFillColorWithColor(context, [[UIColor darkGrayColor] CGColor]);
+    if (zoomed) {
+        CGContextSetFillColorWithColor(context, [[UIColor whiteColor] CGColor]);
+    } else {
+        CGContextSetFillColorWithColor(context, [[UIColor darkGrayColor] CGColor]);        
+    }
+
 	CGContextFillRect(context, box);
     
     int fullCellSize = borderThickness+pixelEdgeLength;

@@ -32,6 +32,7 @@ static NSString * const kGCExperience = @"kGCExperience";
 @synthesize energyUpdateDate;
 @synthesize energyTimer;
 @synthesize experience;
+@synthesize delegate;
 
 - (id)init 
 {
@@ -52,7 +53,7 @@ static NSString * const kGCExperience = @"kGCExperience";
 - (void)updateEnergy
 {
     NSTimeInterval timeInterval = [[NSDate date] timeIntervalSinceDate:energyUpdateDate];
-    if (timeInterval >= 10) {
+    if (timeInterval >= 5) {
         int newEnergy = energy + (int)(timeInterval / 10);
         if (newEnergy > maxEnergy) {
             newEnergy = maxEnergy;
@@ -67,7 +68,7 @@ static NSString * const kGCExperience = @"kGCExperience";
     energy = newEnergy;
     energyUpdateDate = [NSDate date];
     
-    NSLog(@"Energy %d", energy);
+    [delegate updateStats];
 }
     
 - (void)refreshStats

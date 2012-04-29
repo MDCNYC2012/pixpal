@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "PGFieldView.h"
 #import "PGFieldRefreshCommand.h"
+#import "PGGameCoreController.h"
 
-@class PGGameCoreController;
-@interface PGFieldViewController : UIViewController<PGFieldViewDelegate, PGFieldRefreshCommandDelegate>
+@interface PGFieldViewController : UIViewController<PGFieldViewDelegate, PGFieldRefreshCommandDelegate, PGGameCoreControllerDelegate>
 {
     @private
     PGGameCoreController *gameCoreController;
@@ -30,10 +30,15 @@
 
     NSArray *typeButtons;
     int selectedTypeButtonIndex;
+
+    IBOutlet UIImageView *energyBarBackground;
+    IBOutlet UILabel *energyLabel;
 }
 
 
 - (IBAction)pinchGestureSelector:(UIPinchGestureRecognizer *)recognizer;
 - (void)updateZoomState:(BOOL)newZoomedState;
+
+- (void)updateEnergyBar:(int)enegry maxEnergy:(int)maxEnergy;
 
 @end

@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol PGGameCoreControllerDelegate
+- (void)updateStats;
+@end
+
 @interface PGGameCoreController: NSObject
 
 @property (nonatomic) NSString *name;
@@ -19,5 +23,7 @@
 @property (nonatomic, retain) NSTimer *energyTimer;
 
 @property (nonatomic, assign) NSInteger experience;
+
+@property (nonatomic, assign) id<PGGameCoreControllerDelegate> delegate;
 
 @end
