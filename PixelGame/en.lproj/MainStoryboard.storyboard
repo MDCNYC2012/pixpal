@@ -1,27 +1,129 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch.iPad" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--Field View Controller-->
         <scene sceneID="4">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="PGViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews/>
+                <viewController id="2" customClass="PGFieldViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MkI-mX-WeN">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" id="7TB-9A-ZoZ" userLabel="fieldZoomView">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="jqY-CX-DJE" customClass="PGFieldView">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="r9h-zI-1CB" appends="YES" id="h6k-it-0SK"/>
+                                </connections>
+                            </scrollView>
+                            <view hidden="YES" opaque="NO" contentMode="scaleToFill" id="yyI-qa-DUv" userLabel="topBarZoomed">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" image="interface_top.png" id="Ps3-Of-jYE">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" id="irK-E3-vzv" userLabel="bottomBarZoomed">
+                                <rect key="frame" x="0.0" y="681" width="1024" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="interface_bottom.png" id="eo6-jj-Rc0">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" id="o7P-7v-tmg" userLabel="leftBarZoomed">
+                                <rect key="frame" x="0.0" y="47" width="14" height="634"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="interface_mid_left.png" id="sRv-HG-Dwb">
+                                        <rect key="frame" x="0.0" y="0.0" width="14" height="634"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" id="Kpx-hv-hgX" userLabel="rightBarZoomed">
+                                <rect key="frame" x="1010" y="47" width="14" height="634"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="interface_mid_right.png" id="5Qj-Ho-dt5">
+                                        <rect key="frame" x="0.0" y="0.0" width="14" height="634"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="bottomBarZoomed" destination="irK-E3-vzv" id="jeK-AE-6zP"/>
+                        <outlet property="fieldScrollView" destination="7TB-9A-ZoZ" id="Pra-nl-Zxq"/>
+                        <outlet property="fieldView" destination="jqY-CX-DJE" id="aPb-CS-BZh"/>
+                        <outlet property="leftBarZoomed" destination="o7P-7v-tmg" id="7qF-vc-FKR"/>
+                        <outlet property="rightBarZoomed" destination="Kpx-hv-hgX" id="ekI-mo-Dhj"/>
+                        <outlet property="topBarZoomed" destination="yyI-qa-DUv" id="2Lj-q3-qCa"/>
+                    </connections>
                 </viewController>
+                <pinchGestureRecognizer delaysTouchesBegan="YES" id="r9h-zI-1CB">
+                    <connections>
+                        <action selector="pinchGestureSelector:" destination="2" id="gHT-ug-bCg"/>
+                        <outlet property="delegate" destination="2" id="XPe-Ud-f5i"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="87" y="-162"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="interface_bottom.png" width="1024" height="69"/>
+        <image name="interface_mid_left.png" width="14" height="632"/>
+        <image name="interface_mid_right.png" width="14" height="632"/>
+        <image name="interface_top.png" width="1024" height="47"/>
+    </resources>
+    <classes>
+        <class className="PGFieldView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PGFieldView.h"/>
+        </class>
+        <class className="PGFieldViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PGFieldViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pinchGestureSelector:" candidateClass="UIPinchGestureRecognizer"/>
+                <relationship kind="outlet" name="bottomBarZoomed" candidateClass="UIView"/>
+                <relationship kind="outlet" name="fieldScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="fieldView" candidateClass="PGFieldView"/>
+                <relationship kind="outlet" name="leftBarZoomed" candidateClass="UIView"/>
+                <relationship kind="outlet" name="rightBarZoomed" candidateClass="UIView"/>
+                <relationship kind="outlet" name="topBarZoomed" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
-        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
